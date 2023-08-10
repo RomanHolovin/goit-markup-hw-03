@@ -9,7 +9,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
       integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"/>
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +21,7 @@
       <div class="head-container container">
         <nav class="nav">
           <a class="link-slogan link" href="./index.html">Web<span class="studio-black">Studio</span></a>
-  
+
           <ul class="list">
             <li class="nav-link-list link"><a class="list-link-nav link" href="./index.html">Studio</a></li>
             <li class="nav-link-list link"><a class="list-link-nav link" href="./portfolio.html">Portfolio</a></li>
@@ -36,81 +37,101 @@
       </div>
     </header>
     <main>
-      <section>
-        <h1 class="visually-hidden">hide me</h1>
-        <ul class="list">
-          <li class="list-button"><button class="portfolio-button" type="button">All</button></li>
-          <li class="list-button"><button class="portfolio-button" type="button">Web Site</button></li>
-          <li class="list-button"><button class="portfolio-button" type="button">App</button></li>
-          <li class="list-button"><button class="portfolio-button" type="button">Design</button></li>
-          <li class="list-button"><button class="portfolio-button" type="button">Marketing</button></li>
-        </ul>
-        <ul class="list">
-          <li class="list-work-portfolio">
-            <a class="link">
-              <img src="./images/portfolio/img.jpg" alt="Banking App Interface Concept" width="360" />
-              <h2 class="list-snipper-name">Banking App Interface Concept</h2>
-              <p class="list-snippet-text">App</p>
-            </a>
-          </li>
-          <li class="list-work-portfolio">
-            <a class="link">
-              <img src="./images/portfolio/img1.jpg" alt="Cashless Payment" width="360" />
-              <h2 class="list-snipper-name">Cashless Payment</h2>
-              <p class="list-snippet-text">Marketing</p>
-            </a>
-          </li>
-          <li class="list-work-portfolio">
-            <a class="link">
-              <img src="./images/portfolio/img2.jpg" alt="Meditation App" width="360" />
-              <h2 class="list-snipper-name">Meditation App</h2>
-              <p class="list-snippet-text">App</p>
-            </a>
-          </li>
-          <li class="list-work-portfolio">
-            <a class="link">
-              <img src="./images/portfolio/img3.jpg" alt="Taxi Service" width="360" />
-              <h2 class="list-snipper-name">Taxi Service</h2>
-              <p class="list-snippet-text">Marketing</p>
-            </a>
-          </li>
-          <li class="list-work-portfolio">
-            <a class="link">
-              <img src="./images/portfolio/img4.jpg" alt="Screen Illustrations" width="360" />
-              <h2 class="list-snipper-name">Screen Illustrations</h2>
-              <p class="list-snippet-text">Design</p>
-            </a>
-          </li>
-          <li class="list-work-portfolio">
-            <a class="link">
-              <img src="./images/portfolio/img5.jpg" alt="Online Courses" width="360" />
-              <h2 class="list-snipper-name">Online Courses</h2>
-              <p class="list-snippet-text">Marketing</p>
-            </a>
-          </li>
-          <li class="list-work-portfolio">
-            <a class="link">
-              <img src="./images/portfolio/img6.jpg" alt="Instagram Stories Concept" width="360" />
-              <h2 class="list-snipper-name">Instagram Stories Concept</h2>
-              <p class="list-snippet-text">Design</p>
-            </a>
-          </li>
-          <li class="list-work-portfolio">
-            <a class="link">
-              <img src="./images/portfolio/img7.jpg" alt="Organic Food" width="360" />
-              <h2 class="list-snipper-name">Organic Food</h2>
-              <p class="list-snippet-text">Web Site</p>
-            </a>
-          </li>
-          <li class="list-work-portfolio">
-            <a class="link">
-              <img src="./images/portfolio/img8.jpg" alt="Fresh Coffee" width="360" />
-              <h2 class="list-snipper-name">Fresh Coffee</h2>
-              <p class="list-snippet-text">Web Site</p>
-            </a>
-          </li>
-        </ul>
-      </section>
+      <div class="container">
+        <section class="portfolio">
+          <h1 class="visually-hidden">hide me</h1>
+          <ul class="list-portfolio">
+            <li class="list-button"><button class="portfolio-button" type="button">All</button></li>
+            <li class="list-button"><button class="portfolio-button" type="button">Web Site</button></li>
+            <li class="list-button"><button class="portfolio-button" type="button">App</button></li>
+            <li class="list-button"><button class="portfolio-button" type="button">Design</button></li>
+            <li class="list-button"><button class="portfolio-button" type="button">Marketing</button></li>
+          </ul>
+          <ul class="list-item">
+            <li class="list-work-portfolio">
+              <a class="link">
+                <img src="./images/portfolio/img.jpg" alt="Banking App Interface Concept" width="360" />
+               <div class="content">
+                <h2 class="list-snipper-name">Banking App Interface Concept</h2>
+                <p class="list-snippet-text">App</p>
+               </div>
+              </a>
+            </li>
+            <li class="list-work-portfolio">
+              <a class="link">
+                <img src="./images/portfolio/img1.jpg" alt="Cashless Payment" width="360" />
+                <div class="content">
+                  <h2 class="list-snipper-name">Cashless Payment</h2>
+                <p class="list-snippet-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-work-portfolio">
+              <a class="link">
+                <img src="./images/portfolio/img2.jpg" alt="Meditation App" width="360" />
+                <div class="content">
+                  <h2 class="list-snipper-name">Meditation App</h2>
+                <p class="list-snippet-text">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-work-portfolio">
+              <a class="link">
+                <img src="./images/portfolio/img3.jpg" alt="Taxi Service" width="360" />
+              <div class="content">
+                <h2 class="list-snipper-name">Taxi Service</h2>
+                <p class="list-snippet-text">Marketing</p>
+              </div>
+              </a>
+            </li>
+            <li class="list-work-portfolio">
+              <a class="link">
+                <img src="./images/portfolio/img4.jpg" alt="Screen Illustrations" width="360" />
+                <div class="content">
+                  <h2 class="list-snipper-name">Screen Illustrations</h2>
+                <p class="list-snippet-text">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-work-portfolio">
+              <a class="link">
+                <img src="./images/portfolio/img5.jpg" alt="Online Courses" width="360" />
+                <div class="content">
+                  <h2 class="list-snipper-name">Online Courses</h2>
+                <p class="list-snippet-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-work-portfolio">
+              <a class="link">
+                <img src="./images/portfolio/img6.jpg" alt="Instagram Stories Concept" width="360" />
+                <div class="content">
+                  <h2 class="list-snipper-name">Instagram Stories Concept</h2>
+                <p class="list-snippet-text">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-work-portfolio">
+              <a class="link">
+                <img src="./images/portfolio/img7.jpg" alt="Organic Food" width="360" />
+               <div class="content">
+                <h2 class="list-snipper-name">Organic Food</h2>
+                <p class="list-snippet-text">Web Site</p>
+               </div>
+              </a>
+            </li>
+            <li class="list-work-portfolio">
+              <a class="link">
+                <img src="./images/portfolio/img8.jpg" alt="Fresh Coffee" width="360" />
+               <div class="content">
+                <h2 class="list-snipper-name">Fresh Coffee</h2>
+                <p class="list-snippet-text">Web Site</p>
+               </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <a class="link-slogan link" href="./index.html">Web<span class="nav-white">Studio</span></a>
