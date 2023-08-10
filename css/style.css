@@ -12,16 +12,31 @@
   --white: #ffffff;
   --dairy: #fcfcfc;
 }
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
 }
+.head-container {
+  display: flex;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 li {
   list-style-type: none;
 }
 .header {
   background: var(--white, #fff);
+  border-bottom: 1px solid #e7e9fc;
 }
 address {
   font-style: normal;
@@ -33,6 +48,7 @@ address {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .link-slogan {
@@ -44,6 +60,9 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
+  margin-right: 76px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .list-link-nav {
   font-weight: 500;
@@ -51,6 +70,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
 }
 .link {
   text-decoration: none;
@@ -72,6 +92,15 @@ address {
 .list {
   text-decoration: none;
   list-style: none;
+  display: flex;
+  gap: 40px;
+}
+.list-step {
+  display: flex;
+  gap: 24px;
+}
+.list-snippet-step {
+  width: calc((100% - 72px) / 4);
 }
 .headline {
   font-size: 36px;
@@ -84,7 +113,7 @@ address {
 .nav-link {
   color: var(--navyblue, #2e2f42);
   /* Body Medium */
- 
+
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -93,10 +122,12 @@ address {
 }
 .head {
   background: var(--navyblue, #2e2f42);
+  padding: 188px 0;
 }
 
 .section-team {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 .list-address {
   color: var(--slate, #434455);
@@ -106,9 +137,15 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.img-team{
-  background-color: #FFFFFF;
+.img-team {
+  background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
+.name-team-works {
+  padding: 32px 0;
+}
+
 .list-address :hover {
   color: #404bbf;
 }
@@ -121,18 +158,26 @@ address {
   text-align: center;
   font-size: 56px;
   font-style: normal;
-  
+  max-width: 496px;
+
   line-height: 1.07;
   letter-spacing: 0.02em;
 }
 .btn-hed {
   background: var(--iris, #4d5ae5);
   font-weight: 500;
-font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
+  cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  background-color: var(--iris);
+  border-radius: 4px;
   cursor: pointer;
 }
 .btn-hed:hover {
@@ -140,6 +185,9 @@ font-family: "Roboto", sans-serif;
 }
 .btn-hed:focus {
   background-color: #404bbf;
+}
+.section-steap {
+  padding: 120px 0;
 }
 
 .list-snipper-name {
@@ -150,12 +198,19 @@ font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  text-align: center;
+  margin-bottom: 8px;
 }
 .list-snippet-text {
   font-size: 16px;
-
+  text-align: center;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.list-step-works {
+  width: calc((100% - 48px) / 3);
 }
 .section-title {
   color: var(--navyblue, #2e2f42);
@@ -173,25 +228,31 @@ font-family: "Roboto", sans-serif;
   color: #ffffff;
   background-color: #404bbf;
 }
-
+.section-works {
+  padding-bottom: 120px;
+}
 .head-line {
   color: var(--navyblue, #2e2f42);
   text-align: center;
-
+  margin-bottom: 72px;
   font-size: 36px;
   font-style: normal;
- 
+
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
+.list-team {
+  display: flex;
+  gap: 24px;
+}
 .img-snippet {
- 
   background: url(<path-to-image>), lightgray -72.845px -19px / 144.444% 112.667% no-repeat;
 }
 
 .footer {
   background: var(--navyblue, #2e2f42);
+  padding: 100px 0;
 }
 
 .text-footer {
@@ -200,11 +261,10 @@ font-family: "Roboto", sans-serif;
 
   font-size: 16px;
   font-style: normal;
-
+  max-width: 264px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
 
 .portfolio-button {
   font-weight: 500;
@@ -227,4 +287,8 @@ font-family: "Roboto", sans-serif;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-  }
+}
+
+img {
+  display: block;
+}
