@@ -12,19 +12,26 @@
   --white: #ffffff;
   --dairy: #fcfcfc;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
 .container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-}
-ul, ol {
-  margin: 0;
-  padding-left: 0;
-}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -70,6 +77,7 @@ address {
   margin-right: 76px;
   display: inline-block;
   margin-bottom: 16px;
+  margin-left: 156px;
 }
 .list-link-nav {
   font-weight: 500;
@@ -102,12 +110,11 @@ address {
   display: flex;
   gap: 40px;
 }
-.list-portfolio{
- display: flex;
- justify-content:center;
- gap: 24px;
- margin-bottom: 72px;
-
+.list-portfolio {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
 }
 .list-step {
   display: flex;
@@ -222,12 +229,12 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.portfolio{
-  padding-top: 96px; 
-  padding-bottom: 120px; 
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 .list-step-works {
-   flex-basis: calc((100% - 3 * 16px) / 3);
+  flex-basis: calc((100% - 3 * 16px) / 3);
 }
 .section-title {
   color: var(--navyblue, #2e2f42);
@@ -296,7 +303,6 @@ address {
   padding: 12px 24px;
   border: 1px solid var(--cornflower);
   border-radius: 4px;
-
 }
 .visually-hidden {
   position: absolute;
@@ -310,22 +316,21 @@ address {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.list-item{
-  display: flex ;
+.list-item {
+  display: flex;
   flex-wrap: wrap;
-  column-gap: 24px; 
+  column-gap: 24px;
   row-gap: 48px;
 }
 img {
   display: block;
 }
-.list-work-portfolio{
+.list-work-portfolio {
   width: calc((100% - 48px) / 3);
 }
-.content{
+.content {
   padding: 32px 16px;
   border: 1px solid var(--cornflower);
-  border-top:none;
+  border-top: none;
   margin-bottom: 8px;
-  
 }
