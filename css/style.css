@@ -337,6 +337,8 @@ address {
 }
 img {
   display: block;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 .list-work-portfolio {
   width: calc((100% - 48px) / 3);
