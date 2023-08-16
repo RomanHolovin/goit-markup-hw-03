@@ -250,8 +250,8 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  text-align: center;
   margin-bottom: 8px;
+  align-self: flex-start;
 }
 .list-snippet-text {
   font-size: 16px;
