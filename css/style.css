@@ -240,7 +240,19 @@ address {
 .section-steap {
   padding: 120px 0;
 }
-
+.list-snipper-name-team{
+    color: var(--navyblue, #2e2f42);
+  /* Header 3 */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  margin-bottom: 8px;
+  align-self: flex-start;
+  text-align: center; 
+}
 .list-snipper-name {
   color: var(--navyblue, #2e2f42);
   /* Header 3 */
