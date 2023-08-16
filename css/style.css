@@ -86,8 +86,8 @@ address {
   display: inline-block;
   margin-right: 76px;
 }
-.link-slogan-footer{
-   color: var(--iris, #4d5ae5);
+.link-slogan-footer {
+  color: var(--iris, #4d5ae5);
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -96,7 +96,6 @@ address {
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
   display: inline-block;
-  margin-right: 76px;
   margin-bottom: 16px;
 }
 .list-link-nav {
@@ -255,6 +254,12 @@ address {
   margin-bottom: 8px;
 }
 .list-snippet-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  align-self: flex-start;
+}
+.list-snippet-text-team {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
